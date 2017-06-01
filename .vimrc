@@ -30,6 +30,9 @@ Plug 'tpope/vim-markdown'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'Matt-Deacalion/vim-systemd-syntax'
 
+" Colorschemes
+Plug 'dracula/vim'
+
 call plug#end()
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -49,6 +52,9 @@ set expandtab
 
 " Enable syntax highlighting
 syntax on
+
+" Sets the colorscheme for terminal sessions too.
+colorscheme dracula
 
 " FZF
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
