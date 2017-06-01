@@ -38,9 +38,8 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Load NVM
-export NVM_DIR="/Users/mccraveiro/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" 
-export PATH=/usr/local/mysql/bin:$PATH
 nvm use node > /dev/null
 
 # Default Editor
