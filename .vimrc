@@ -4,6 +4,8 @@ Plug 'ggreer/the_silver_searcher'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'neomake/neomake'
+Plug 'Shougo/deoplete.nvim'
+Plug 'carlitux/deoplete-ternjs'
 
 " Languages
 Plug 'b4winckler/vim-objc'
@@ -68,6 +70,9 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 nnoremap <leader>a :execute "Ag" expand("<cword>")<cr>
 nnoremap <C-P> :Files<cr>
 nnoremap <C-F> :Ag<space>
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
 
 " Ignore these folders 
 set wildignore+=**/node_modules/**/*
