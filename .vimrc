@@ -3,6 +3,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'ggreer/the_silver_searcher'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'neomake/neomake'
 
 " Languages
 Plug 'b4winckler/vim-objc'
@@ -55,6 +56,12 @@ syntax on
 
 " Sets the colorscheme for terminal sessions too.
 colorscheme dracula
+
+" Neomake
+autocmd InsertLeave,BufWritePost * update | Neomake 
+
+" Eslint
+let g:neomake_javascript_enabled_makers = ['eslint']
 
 " FZF
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
