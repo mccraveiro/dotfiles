@@ -37,10 +37,15 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
+# Exists helper
+exists() { type -t "$1" > /dev/null 2>&1; }
+
 # Load NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" 
-nvm use node > /dev/null
+if exists nvm; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" 
+  nvm use node > /dev/null
+fi
 
 # Default Editor
 export EDITOR='nvim'
