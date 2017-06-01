@@ -53,6 +53,9 @@ set shiftwidth=2
 " And also expand tabs.
 set expandtab
 
+" Highlight current line
+set cursorline
+
 " Enable syntax highlighting
 syntax on
 
