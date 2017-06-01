@@ -74,5 +74,10 @@ nnoremap <C-F> :Ag<space>
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 
+" Buffer mappings
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr>
+
 " Ignore these folders 
 set wildignore+=**/node_modules/**/*
