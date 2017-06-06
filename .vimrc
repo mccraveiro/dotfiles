@@ -53,6 +53,10 @@ set shiftwidth=2
 " And also expand tabs.
 set expandtab
 
+" Show invisibles
+set listchars=tab:>-,trail:~,extends:>,precedes:<
+set list
+
 " Highlight current line
 set cursorline
 
