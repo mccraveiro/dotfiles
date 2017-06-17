@@ -41,8 +41,8 @@ source $ZSH/oh-my-zsh.sh
 exists() { type -t "$1" > /dev/null 2>&1; }
 
 # Load NVM
-if exists nvm; then
-  export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$HOME/.nvm"
+if [ -d "$NVM_DIR" ]; then
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" 
   nvm use node > /dev/null
 fi
