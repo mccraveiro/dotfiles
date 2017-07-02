@@ -60,6 +60,9 @@ set list
 " Highlight current line
 set cursorline
 
+" Show 80 column line
+set colorcolumn=80
+
 " Enable syntax highlighting
 syntax on
 
