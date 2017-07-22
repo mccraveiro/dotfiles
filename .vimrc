@@ -92,3 +92,6 @@ map gd :bd<cr>
 
 " Ignore these folders 
 set wildignore+=**/node_modules/**/*
+
+" Always use clipboard
+set clipboard+=unnamedplus
