@@ -67,6 +67,9 @@ set colorcolumn=80
 " Enable syntax highlighting
 syntax on
 
+" Automatically reads changed files
+set autoread
+
 " Sets the colorscheme for terminal sessions too.
 colorscheme dracula
 
