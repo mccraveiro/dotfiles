@@ -6,6 +6,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'neomake/neomake'
 Plug 'Shougo/deoplete.nvim'
 Plug 'carlitux/deoplete-ternjs'
+Plug 'airblade/vim-gitgutter'
 
 " Languages
 Plug 'b4winckler/vim-objc'
