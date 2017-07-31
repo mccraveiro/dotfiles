@@ -45,6 +45,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set ignorecase
 
 " line number
+set relativenumber
 set number
 
 " Global tab width.
