@@ -99,3 +99,6 @@ set wildignore+=**/node_modules/**/*
 
 " Always use clipboard
 set clipboard+=unnamedplus
+
+" Map <C-C> to <esc>
+noremap <C-C> <esc>
