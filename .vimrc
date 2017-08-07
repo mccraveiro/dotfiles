@@ -8,6 +8,9 @@ Plug 'Shougo/deoplete.nvim'
 Plug 'carlitux/deoplete-ternjs'
 Plug 'airblade/vim-gitgutter'
 
+" Create a file-tree
+Plug 'scrooloose/nerdtree'
+
 " Languages
 Plug 'b4winckler/vim-objc'
 Plug 'rodjek/vim-puppet'
@@ -74,6 +77,9 @@ set autoread
 " Sets the colorscheme for terminal sessions too.
 colorscheme dracula
 
+" Set map leader
+let mapleader = "\<Space>"
+
 " Neomake
 autocmd InsertLeave,BufWritePost * update | Neomake 
 
@@ -106,3 +112,13 @@ noremap <C-C> <esc>
 " Go to start of line with H and to the end with L
 noremap H ^
 noremap L $
+
+" ----------------------------------------------------------------------
+" | Plugin - NerdTree                                                  |
+" ----------------------------------------------------------------------
+
+noremap <leader>ft :NERDTreeToggle<CR>
+
+" Don't fuck up vim's default file browser
+
+let g:NERDTreeHijackNetrw = 0
