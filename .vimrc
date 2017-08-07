@@ -102,3 +102,7 @@ set clipboard+=unnamedplus
 
 " Map <C-C> to <esc>
 noremap <C-C> <esc>
+
+" Go to start of line with H and to the end with L
+noremap H ^
+noremap L $
